@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="iphone14SixtynineVM" type="com.natashasapplication.app.modules.iphone14sixtynine.data.viewmodel.Iphone14SixtynineVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameIPhone14Six"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylepurple_700_f2">
+        <View android:background="@color/white_A700"
+            android:id="@+id/viewRectangleSixty"
+            android:layout_gravity="start" android:layout_height="823dp" android:layout_width="@dimen/_353pxh"/>
+        <LinearLayout android:id="@+id/linearColumnarrowleft"
+            android:layout_gravity="top|start"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:gravity="center_horizontal"
+                android:id="@+id/toolbarNavigationbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowarrowleft"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageArrowleft"
+                        android:layout_height="@dimen/_24pxh"
+                        android:layout_width="@dimen/_32pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_arrowleft"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtMyAddress"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{iphone14SixtynineVM.iphone14SixtynineModel.txtMyAddress}"
+                        style="@style/txtMerriweatherSansromanregular20" tools:text="@string/lbl_my_address"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowplusmath"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal" style="@style/groupStylewhite_10">
+                <ImageView android:id="@+id/imagePlusMath"
+                    android:layout_height="@dimen/_20pxh"
+                    android:layout_width="@dimen/_20pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_plusmath"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_plusmath"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtAddAddress"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{iphone14SixtynineVM.iphone14SixtynineModel.txtAddAddress}"
+                    style="@style/txtMerriweatherSansromanregular18" tools:text="@string/lbl_add_address"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

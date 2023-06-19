@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="iphone14SixVM" type="com.natashasapplication.app.modules.iphone14six.data.viewmodel.Iphone14SixVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearIPhone14Six"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnarrowleft"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <ImageView android:id="@+id/imageArrowleft"
+                android:layout_height="@dimen/_24pxh"
+                android:layout_width="@dimen/_32pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_arrowleft"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSettings"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{iphone14SixVM.iphone14SixModel.txtSettings}"
+                style="@style/txtMerriweatherSansromanregular24" tools:text="@string/lbl_settings"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnlinetwelve"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <View android:background="@color/black_900_47"
+                android:id="@+id/lineLineTwelve"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_1pxv" android:layout_width="@dimen/_325pxh"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumneditprofile"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtEditProfile"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{iphone14SixVM.iphone14SixModel.txtEditProfile}"
+                style="@style/txtLedgerregular18" tools:text="@string/lbl_edit_profile"/>
+            <TextView android:id="@+id/txtChangeyournam"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@{iphone14SixVM.iphone14SixModel.txtChangeyournam}"
+                style="@style/txtLedgerregular14_1" tools:text="@string/msg_change_your_nam"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnlineeleven"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <View android:background="@color/black_900_47"
+                android:id="@+id/lineLineEleven"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_1pxv" android:layout_width="@dimen/_325pxh"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnnotificationse"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtNotificationse"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{iphone14SixVM.iphone14SixModel.txtNotificationse}"
+                style="@style/txtLedgerregular18" tools:text="@string/msg_notification_se"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumndefinewhatale"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtDefinewhatale"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@{iphone14SixVM.iphone14SixModel.txtDefinewhatale}"
+                style="@style/txtLedgerregular14_1" tools:text="@string/msg_define_what_ale"/>
+            <View android:background="@color/black_900_47"
+                android:id="@+id/lineLineTen"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_1pxv" android:layout_width="@dimen/_325pxh"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnaccountsetting"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtAccountSetting"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{iphone14SixVM.iphone14SixModel.txtAccountSetting}"
+                style="@style/txtLedgerregular18" tools:text="@string/msg_account_setting"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtDeleteyouracc"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{iphone14SixVM.iphone14SixModel.txtDeleteyouracc}"
+                style="@style/txtLedgerregular13" tools:text="@string/msg_delete_your_acc"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

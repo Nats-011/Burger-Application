@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="iphone14Twentyone1VM" type="com.natashasapplication.app.modules.iphone14twentyone1.data.viewmodel.Iphone14Twentyone1VM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStacklanguage"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylepurple_700">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_gravity="start" android:layout_height="0dp"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <FrameLayout android:id="@+id/frameIPhone14Twe"
+                android:layout_height="match_parent" android:layout_width="match_parent">
+                <FrameLayout android:id="@+id/frameStackellipseone"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_215pxv" android:layout_width="@dimen/_270pxh">
+                    <ImageView android:id="@+id/imageEllipseOne"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_215pxh"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        cornerRadius="@{@dimen/_137pxh}"
+                        imageRes="@{@drawable/img_ellipse1_4}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse1_4"/>
+                    <FrameLayout android:id="@+id/frameStackellipsetwo"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_215pxv" android:layout_width="@dimen/_237pxh">
+                        <ImageView android:id="@+id/imageEllipseTwo"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="@dimen/_194pxv"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            imageRes="@{@drawable/img_ellipse2_5}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse2_5"/>
+                        <View
+                            android:background="@drawable/rectangle_bg_white_a700_radius_68_5"
+                            android:id="@+id/viewEllipseSix"
+                            android:layout_gravity="top|start"
+                            android:layout_height="@dimen/_137pxh" android:layout_width="@dimen/_134pxh"/>
+                    </FrameLayout>
+                </FrameLayout>
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayoutGroup2"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    app:tabMode="scrollable"
+                    app:tabSelectedTextColor="@color/black_901"
+                    app:tabTextColor="@color/black_901" style="@style/groupStylewhite_7"/>
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPagerViewpager"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" android:layout_width="match_parent"/>
+            </FrameLayout>
+        </ScrollView>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarNavigationbar"
+            android:layout_gravity="top|start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:contentInsetStart="0dp" style="@style/groupStylewhite_7">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowarrowleft"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageArrowleft"
+                    android:layout_height="@dimen/_24pxh"
+                    android:layout_width="@dimen/_32pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrowleft"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtBRsMenu"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{iphone14Twentyone1VM.iphone14Twentyone1Model.txtBRsMenu}"
+                    style="@style/txtMerriweatherSansromanregular20" tools:text="@string/lbl_br_s_menu"/>
+                <LinearLayout android:id="@+id/linearRowsortby"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal" style="@style/groupStylecornerRadius_3">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtSortby"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{iphone14Twentyone1VM.iphone14Twentyone1Model.txtSortby}"
+                        style="@style/txtMerriweatherSansromanregular16_1" tools:text="@string/lbl_sort_by"/>
+                    <ImageView android:id="@+id/imageImageThirteen"
+                        android:layout_height="@dimen/_18pxh"
+                        android:layout_width="@dimen/_18pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_image13_18x18"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_image13_18x18"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </FrameLayout>
+</layout>

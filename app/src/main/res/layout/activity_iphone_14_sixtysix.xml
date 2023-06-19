@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="iphone14SixtysixVM" type="com.natashasapplication.app.modules.iphone14sixtysix.data.viewmodel.Iphone14SixtysixVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameIPhone14Six"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylepurple_700_f2">
+        <LinearLayout android:id="@+id/linearRowarrowleft"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylewhite_8">
+            <ImageView android:id="@+id/imageArrowleft"
+                android:layout_height="@dimen/_24pxh"
+                android:layout_width="@dimen/_32pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_arrowleft"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTakeawayDine"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{iphone14SixtysixVM.iphone14SixtysixModel.txtTakeawayDine}"
+                style="@style/txtMerriweatherSansromanregular20" tools:text="@string/msg_takeaway_dine"/>
+        </LinearLayout>
+        <EditText
+            android:background="@drawable/rectangle_gradient_s_white_a700_c_gray_400_e_white_a700_00_radius_19"
+            android:drawablePadding="@dimen/_17pxh"
+            android:ellipsize="end"
+            android:hint="@string/msg_search_for_your"
+            android:id="@+id/etGroup197" android:inputType="text"
+            android:layout_gravity="top|center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_14pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_10pxh"
+            android:paddingTop="@dimen/_14pxv" android:singleLine="true"
+            android:text="@={iphone14SixtysixVM.iphone14SixtysixModel.etGroup197Value}"
+            android:textColorHint="@color/gray_703"
+            style="@style/etGradientRounded" tools:ignore="Autofill"/>
+        <LinearLayout android:id="@+id/linearRowvector"
+            android:layout_gravity="top|center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylecornerRadius_5">
+            <ImageView android:id="@+id/imageVector"
+                android:layout_height="@dimen/_26pxh"
+                android:layout_width="@dimen/_18pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_vector_black_901_26x18"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_vector_black_901_26x18"/>
+            <TextView android:id="@+id/txtPreciselocatio"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:text="@{iphone14SixtysixVM.iphone14SixtysixModel.txtPreciselocatio}"
+                style="@style/txtMerriweatherSansitalicbold14_1" tools:text="@string/msg_precise_locatio"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnUseCurrentLocation"
+                android:layout_height="@dimen/_43pxv"
+                android:layout_width="@dimen/_183pxh"
+                android:paddingBottom="@dimen/_11pxv"
+                android:paddingEnd="@dimen/_14pxh"
+                android:paddingStart="@dimen/_13pxh"
+                android:paddingTop="@dimen/_11pxv"
+                android:singleLine="true"
+                android:text="@string/msg_use_current_loc"
+                android:textAllCaps="false"
+                style="@style/btnSolidOutline" tools:text="@string/msg_use_current_loc"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

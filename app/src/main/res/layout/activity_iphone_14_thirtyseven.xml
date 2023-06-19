@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="iphone14ThirtysevenVM" type="com.natashasapplication.app.modules.iphone14thirtyseven.data.viewmodel.Iphone14ThirtysevenVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStack"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylepurple_700">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_gravity="start" android:layout_height="0dp"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumnellipseone"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <FrameLayout android:gravity="start"
+                    android:id="@+id/frameStackellipsetwentyfour"
+                    android:layout_height="2475dp" android:layout_width="match_parent">
+                    <FrameLayout android:id="@+id/frameStackellipseone"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_215pxv" android:layout_width="@dimen/_270pxh">
+                        <ImageView android:id="@+id/imageEllipseOne"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_215pxh"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            cornerRadius="@{@dimen/_137pxh}"
+                            imageRes="@{@drawable/img_ellipse1_14}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse1_14"/>
+                        <FrameLayout
+                            android:id="@+id/frameStackellipsetwo"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_215pxv" android:layout_width="@dimen/_237pxh">
+                            <ImageView android:id="@+id/imageEllipseTwo"
+                                android:layout_gravity="bottom|start"
+                                android:layout_height="@dimen/_194pxv"
+                                android:layout_width="match_parent"
+                                android:scaleType="fitXY"
+                                imageRes="@{@drawable/img_ellipse2_14}"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse2_14"/>
+                            <View
+                                android:background="@drawable/rectangle_bg_white_a700_radius_68_5"
+                                android:id="@+id/viewEllipseSix"
+                                android:layout_gravity="top|start"
+                                android:layout_height="@dimen/_137pxh" android:layout_width="@dimen/_134pxh"/>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <ImageView android:id="@+id/imageEllipseTwentyFour"
+                        android:layout_gravity="bottom|center"
+                        android:layout_height="2338dp"
+                        android:layout_width="@dimen/_387pxh"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_ellipse24_26}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse24_26"/>
+                    <ImageView android:id="@+id/imageImageNine"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_236pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_image9_17}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_image9_17"/>
+                    <LinearLayout android:id="@+id/linearColumnbuntype"
+                        android:layout_gravity="top|start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                        <FrameLayout android:id="@+id/frameStackbuntype"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_64pxv" android:layout_width="@dimen/_240pxh">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtBunType"
+                                android:layout_gravity="top|start"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtBunType}"
+                                style="@style/txtMerriweatherbold20" tools:text="@string/lbl_bun_type"/>
+                            <FrameLayout
+                                android:id="@+id/frameStacklanguage"
+                                android:layout_gravity="start"
+                                android:layout_height="@dimen/_64pxv" android:layout_width="@dimen/_240pxh">
+                                <TextView android:ellipsize="end"
+                                    android:gravity="top|start"
+                                    android:id="@+id/txtLanguage"
+                                    android:layout_gravity="bottom|center"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtLanguage}"
+                                    style="@style/txtMerriweatherregular19" tools:text="@string/lbl3"/>
+                                <ImageView
+                                    android:id="@+id/imageFastfoodset"
+                                    android:layout_gravity="top|start"
+                                    android:layout_height="@dimen/_55pxh"
+                                    android:layout_width="@dimen/_18pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_fastfoodset"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_fastfoodset"/>
+                            </FrameLayout>
+                        </FrameLayout>
+                        <LinearLayout
+                            android:id="@+id/linearRowlanguageOne"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtLanguageOne"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtLanguageOne}"
+                                style="@style/txtMerriweatherregular19" tools:text="@string/lbl_brioche"/>
+                            <LinearLayout
+                                android:id="@+id/linearRowlineone"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content" android:orientation="horizontal">
+                                <View
+                                    android:background="@color/white_A700"
+                                    android:id="@+id/lineLineOne"
+                                    android:layout_height="@dimen/_2pxv" android:layout_width="@dimen/_9pxh"/>
+                                <FrameLayout
+                                    android:id="@+id/frameStacklinetwo"
+                                    android:layout_height="@dimen/_32pxv" android:layout_width="@dimen/_32pxh">
+                                    <View
+                                    android:background="@color/white_A700"
+                                    android:id="@+id/lineLineTwo"
+                                    android:layout_gravity="bottom|start"
+                                    android:layout_height="@dimen/_2pxv" android:layout_width="@dimen/_11pxh"/>
+                                    <View
+                                    android:background="@color/white_A700"
+                                    android:id="@+id/lineLineThree"
+                                    android:layout_gravity="bottom|start"
+                                    android:layout_height="@dimen/_9pxv" android:layout_width="@dimen/_2pxh"/>
+                                    <LinearLayout
+                                    android:id="@+id/linearColumnellipsefortyone"
+                                    android:layout_gravity="start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical" style="@style/groupStylegray_402cornerRadius">
+                                    <View
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_11"
+                                    android:id="@+id/viewEllipseFortyOne"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                                    </LinearLayout>
+                                </FrameLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linearRowwholemeal"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtWholemeal"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtWholemeal}"
+                                style="@style/txtMerriweatherregular19" tools:text="@string/lbl_wholemeal"/>
+                            <LinearLayout
+                                android:gravity="center_horizontal"
+                                android:id="@+id/linearColumnellipsefortythree"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical" style="@style/groupStylegray_402cornerRadius">
+                                <View
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_11"
+                                    android:id="@+id/viewEllipseFortyThree"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linearRowglutenfree"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtGlutenFree"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtGlutenFree}"
+                                style="@style/txtMerriweatherregular19" tools:text="@string/lbl_gluten_free"/>
+                            <LinearLayout
+                                android:gravity="center_horizontal"
+                                android:id="@+id/linearColumnellipsefortyfive"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical" style="@style/groupStylegray_402cornerRadius">
+                                <View
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_11"
+                                    android:id="@+id/viewEllipseFortyFive"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:id="@+id/linearRowsesame"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtSesame"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtSesame}"
+                                style="@style/txtMerriweatherregular19" tools:text="@string/lbl_sesame"/>
+                            <LinearLayout
+                                android:gravity="center_horizontal"
+                                android:id="@+id/linearColumnellipsefortyseven"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical" style="@style/groupStylegray_402cornerRadius">
+                                <View
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_11"
+                                    android:id="@+id/viewEllipseFortySeven"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/linearColumncheese"
+                        android:layout_gravity="top|start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                        <FrameLayout android:id="@+id/frameStackcheese"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_64pxv" android:layout_width="@dimen/_240pxh">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtCheese"
+                                android:layout_gravity="top|start"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtCheese}"
+                                style="@style/txtMerriweatherbold20" tools:text="@string/lbl_cheese"/>
+                            <FrameLayout
+                                android:id="@+id/frameStacklanguageTwo"
+                                android:layout_gravity="start"
+                                android:layout_height="@dimen/_64pxv" android:layout_width="@dimen/_240pxh">
+                                <TextView android:ellipsize="end"
+                                    android:gravity="top|start"
+                                    android:id="@+id/txtLanguageTwo"
+                                    android:layout_gravity="bottom|center"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtLanguageTwo}"
+                                    style="@style/txtMerriweatherregular19" tools:text="@string/lbl3"/>
+                                <ImageView
+                                    android:id="@+id/imageFastfoodsetOne"
+                                    android:layout_gravity="top|start"
+                                    android:layout_height="@dimen/_55pxh"
+                                    android:layout_width="@dimen/_18pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_fastfoodset"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_fastfoodset"/>
+                            </FrameLayout>
+                        </FrameLayout>
+                        <LinearLayout
+                            android:id="@+id/linearRowlanguageThree"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtLanguageThree"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtLanguageThree}"
+                                style="@style/txtMerriweatherregular19" tools:text="@string/lbl_cheddar"/>
+                            <FrameLayout
+                                android:id="@+id/frameStacklinefour"
+                                android:layout_height="@dimen/_32pxv" android:layout_width="@dimen/_32pxh">
+                                <View
+                                    android:background="@color/white_A700"
+                                    android:id="@+id/lineLineFour"
+                                    android:layout_gravity="bottom|start"
+                                    android:layout_height="@dimen/_2pxv" android:layout_width="@dimen/_11pxh"/>
+                                <View
+                                    android:background="@color/white_A700"
+                                    android:id="@+id/lineLineFive"
+                                    android:layout_gravity="bottom|start"
+                                    android:layout_height="@dimen/_9pxv" android:layout_width="@dimen/_2pxh"/>
+                                <LinearLayout
+                                    android:id="@+id/linearColumnellipsefortynine"
+                                    android:layout_gravity="start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical" style="@style/groupStylegray_402cornerRadius">
+                                    <View
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_11"
+                                    android:id="@+id/viewEllipseFortyNine"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                        <LinearLayout android:id="@+id/linearRowswiss"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtSwiss"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtSwiss}"
+                                style="@style/txtMerriweatherregular19" tools:text="@string/lbl_swiss"/>
+                            <LinearLayout
+                                android:gravity="center_horizontal"
+                                android:id="@+id/linearColumnellipsefiftyone"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical" style="@style/groupStylegray_402cornerRadius">
+                                <View
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_11"
+                                    android:id="@+id/viewEllipseFiftyOne"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:id="@+id/linearRowblue"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtBlue"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtBlue}"
+                                style="@style/txtMerriweatherregular19" tools:text="@string/lbl_blue"/>
+                            <LinearLayout
+                                android:gravity="center_horizontal"
+                                android:id="@+id/linearColumnellipsefiftythree"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical" style="@style/groupStylegray_402cornerRadius">
+                                <View
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_11"
+                                    android:id="@+id/viewEllipseFiftyThree"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linearRowamerican"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtAmerican"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtAmerican}"
+                                style="@style/txtMerriweatherregular19" tools:text="@string/lbl_american"/>
+                            <LinearLayout
+                                android:gravity="center_horizontal"
+                                android:id="@+id/linearColumnellipsefiftyfive"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical" style="@style/groupStylegray_402cornerRadius">
+                                <View
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_11"
+                                    android:id="@+id/viewEllipseFiftyFive"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/linearColumntoppings"
+                        android:layout_gravity="top|start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                        <FrameLayout
+                            android:id="@+id/frameStacktoppings"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_64pxv" android:layout_width="@dimen/_240pxh">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtToppings"
+                                android:layout_gravity="top|start"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtToppings}"
+                                style="@style/txtMerriweatherbold20" tools:text="@string/lbl_toppings"/>
+                            <FrameLayout
+                                android:id="@+id/frameStacklanguageFour"
+                                android:layout_gravity="start"
+                                android:layout_height="@dimen/_64pxv" android:layout_width="@dimen/_240pxh">
+                                <TextView android:ellipsize="end"
+                                    android:gravity="top|start"
+                                    android:id="@+id/txtLanguageFour"
+                                    android:layout_gravity="bottom|center"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtLanguageFour}"
+                                    style="@style/txtMerriweatherregular19" tools:text="@string/lbl3"/>
+                                <ImageView
+                                    android:id="@+id/imageFastfoodsetTwo"
+                                    android:layout_gravity="top|start"
+                                    android:layout_height="@dimen/_55pxh"
+                                    android:layout_width="@dimen/_18pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_fastfoodset"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_fastfoodset"/>
+                            </FrameLayout>
+                        </FrameLayout>
+                        <LinearLayout
+                            android:id="@+id/linearRowlanguageFive"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtLanguageFive"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtLanguageFive}"
+                                style="@style/txtMerriweatherregular19" tools:text="@string/lbl_lettuce"/>
+                            <FrameLayout
+                                android:id="@+id/frameStacklinesix"
+                                android:layout_height="@dimen/_32pxv" android:layout_width="@dimen/_32pxh">
+                                <View
+                                    android:background="@color/white_A700"
+                                    android:id="@+id/lineLineSix"
+                                    android:layout_gravity="bottom|start"
+                                    android:layout_height="@dimen/_2pxv" android:layout_width="@dimen/_11pxh"/>
+                                <View
+                                    android:background="@color/white_A700"
+                                    android:id="@+id/lineLineSeven"
+                                    android:layout_gravity="bottom|start"
+                                    android:layout_height="@dimen/_9pxv" android:layout_width="@dimen/_2pxh"/>
+                                <LinearLayout
+                                    android:id="@+id/linearColumnellipsefiftyseven"
+                                    android:layout_gravity="start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical" style="@style/groupStylegray_402cornerRadius">
+                                    <View
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_11"
+                                    android:id="@+id/viewEllipseFiftySeven"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                        <LinearLayout android:id="@+id/linearRowtomato"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtTomato"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtTomato}"
+                                style="@style/txtMerriweatherregular19" tools:text="@string/lbl_tomato"/>
+                            <LinearLayout
+                                android:gravity="center_horizontal"
+                                android:id="@+id/linearColumnellipsefiftynine"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical" style="@style/groupStylegray_402cornerRadius">
+                                <View
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_11"
+                                    android:id="@+id/viewEllipseFiftyNine"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:id="@+id/linearRowonion"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtOnion"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtOnion}"
+                                style="@style/txtMerriweatherregular19" tools:text="@string/lbl_onion"/>
+                            <LinearLayout
+                                android:gravity="center_horizontal"
+                                android:id="@+id/linearColumnellipsesixtyone"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical" style="@style/groupStylegray_402cornerRadius">
+                                <View
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_11"
+                                    android:id="@+id/viewEllipseSixtyOne"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linearRowmushroom"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtMushroom"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtMushroom}"
+                                style="@style/txtMerriweatherregular19" tools:text="@string/lbl_mushroom"/>
+                            <LinearLayout
+                                android:gravity="center_horizontal"
+                                android:id="@+id/linearColumnellipsesixtythree"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical" style="@style/groupStylegray_402cornerRadius">
+                                <View
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_11"
+                                    android:id="@+id/viewEllipseSixtyThree"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/linearColumnsauces"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                        <FrameLayout android:id="@+id/frameStacksauces"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_64pxv" android:layout_width="@dimen/_240pxh">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtSauces"
+                                android:layout_gravity="top|start"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtSauces}"
+                                style="@style/txtMerriweatherbold20" tools:text="@string/lbl_sauces"/>
+                            <FrameLayout
+                                android:id="@+id/frameStacklanguageSix"
+                                android:layout_gravity="start"
+                                android:layout_height="@dimen/_64pxv" android:layout_width="@dimen/_240pxh">
+                                <TextView android:ellipsize="end"
+                                    android:gravity="top|start"
+                                    android:id="@+id/txtLanguageSix"
+                                    android:layout_gravity="bottom|center"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtLanguageSix}"
+                                    style="@style/txtMerriweatherregular19" tools:text="@string/lbl3"/>
+                                <ImageView
+                                    android:id="@+id/imageFastfoodsetThree"
+                                    android:layout_gravity="top|start"
+                                    android:layout_height="@dimen/_55pxh"
+                                    android:layout_width="@dimen/_18pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_fastfoodset"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_fastfoodset"/>
+                            </FrameLayout>
+                        </FrameLayout>
+                        <LinearLayout
+                            android:id="@+id/linearRowlanguageSeven"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtLanguageSeven"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtLanguageSeven}"
+                                style="@style/txtMerriweatherregular19" tools:text="@string/lbl_ketchup"/>
+                            <FrameLayout
+                                android:id="@+id/frameStacklineeight"
+                                android:layout_height="@dimen/_32pxv" android:layout_width="@dimen/_32pxh">
+                                <View
+                                    android:background="@color/white_A700"
+                                    android:id="@+id/lineLineEight"
+                                    android:layout_gravity="bottom|start"
+                                    android:layout_height="@dimen/_2pxv" android:layout_width="@dimen/_11pxh"/>
+                                <View
+                                    android:background="@color/white_A700"
+                                    android:id="@+id/lineLineNine"
+                                    android:layout_gravity="bottom|start"
+                                    android:layout_height="@dimen/_9pxv" android:layout_width="@dimen/_2pxh"/>
+                                <LinearLayout
+                                    android:id="@+id/linearColumnellipsesixtyfive"
+                                    android:layout_gravity="start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical" style="@style/groupStylegray_402cornerRadius">
+                                    <View
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_11"
+                                    android:id="@+id/viewEllipseSixtyFive"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                        <LinearLayout android:id="@+id/linearRowmustard"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtMustard"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtMustard}"
+                                style="@style/txtMerriweatherregular19" tools:text="@string/lbl_mustard"/>
+                            <LinearLayout
+                                android:gravity="center_horizontal"
+                                android:id="@+id/linearColumnellipsesixtyseven"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical" style="@style/groupStylegray_402cornerRadius">
+                                <View
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_11"
+                                    android:id="@+id/viewEllipseSixtySeven"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linearRowmayonnaise"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtMayonnaise"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtMayonnaise}"
+                                style="@style/txtMerriweatherregular19" tools:text="@string/lbl_mayonnaise"/>
+                            <LinearLayout
+                                android:gravity="center_horizontal"
+                                android:id="@+id/linearColumnellipsesixtynine"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical" style="@style/groupStylegray_402cornerRadius">
+                                <View
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_11"
+                                    android:id="@+id/viewEllipseSixtyNine"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:id="@+id/linearRowbbq"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtBBQ"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtBBQ}"
+                                style="@style/txtMerriweatherregular19" tools:text="@string/lbl_bbq"/>
+                            <LinearLayout
+                                android:gravity="center_horizontal"
+                                android:id="@+id/linearColumnellipseseventyone"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical" style="@style/groupStylegray_402cornerRadius">
+                                <View
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_11"
+                                    android:id="@+id/viewEllipseSeventyOne"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/linearColumnextras"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                        <FrameLayout android:id="@+id/frameStackextras"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_64pxv" android:layout_width="@dimen/_240pxh">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtExtras"
+                                android:layout_gravity="top|start"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtExtras}"
+                                style="@style/txtMerriweatherbold20" tools:text="@string/lbl_extras"/>
+                            <FrameLayout
+                                android:id="@+id/frameStacklanguageEight"
+                                android:layout_gravity="start"
+                                android:layout_height="@dimen/_64pxv" android:layout_width="@dimen/_240pxh">
+                                <TextView android:ellipsize="end"
+                                    android:gravity="top|start"
+                                    android:id="@+id/txtLanguageEight"
+                                    android:layout_gravity="bottom|center"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtLanguageEight}"
+                                    style="@style/txtMerriweatherregular19" tools:text="@string/lbl3"/>
+                                <ImageView
+                                    android:id="@+id/imageFastfoodsetFour"
+                                    android:layout_gravity="top|start"
+                                    android:layout_height="@dimen/_55pxh"
+                                    android:layout_width="@dimen/_18pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_fastfoodset"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_fastfoodset"/>
+                            </FrameLayout>
+                        </FrameLayout>
+                        <LinearLayout
+                            android:id="@+id/linearRowlanguageNine"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtLanguageNine"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtLanguageNine}"
+                                style="@style/txtMerriweatherregular19" tools:text="@string/lbl_bacon"/>
+                            <FrameLayout
+                                android:id="@+id/frameStacklineten"
+                                android:layout_height="@dimen/_32pxv" android:layout_width="@dimen/_32pxh">
+                                <View
+                                    android:background="@color/white_A700"
+                                    android:id="@+id/lineLineTen"
+                                    android:layout_gravity="bottom|start"
+                                    android:layout_height="@dimen/_2pxv" android:layout_width="@dimen/_11pxh"/>
+                                <View
+                                    android:background="@color/white_A700"
+                                    android:id="@+id/lineLineEleven"
+                                    android:layout_gravity="bottom|start"
+                                    android:layout_height="@dimen/_9pxv" android:layout_width="@dimen/_2pxh"/>
+                                <LinearLayout
+                                    android:id="@+id/linearColumnellipseseventythree"
+                                    android:layout_gravity="start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical" style="@style/groupStylegray_402cornerRadius">
+                                    <View
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_11"
+                                    android:id="@+id/viewEllipseSeventyThree"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                        <LinearLayout android:id="@+id/linearRowegg"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtEgg"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtEgg}"
+                                style="@style/txtMerriweatherregular19" tools:text="@string/lbl_egg"/>
+                            <LinearLayout
+                                android:gravity="center_horizontal"
+                                android:id="@+id/linearColumnellipseseventyfive"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical" style="@style/groupStylegray_402cornerRadius">
+                                <View
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_11"
+                                    android:id="@+id/viewEllipseSeventyFive"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linearRowavocadoe"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtAvocadoe"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtAvocadoe}"
+                                style="@style/txtMerriweatherregular19" tools:text="@string/lbl_avocadoe"/>
+                            <LinearLayout
+                                android:gravity="center_horizontal"
+                                android:id="@+id/linearColumnellipseseventyseven"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical" style="@style/groupStylegray_402cornerRadius">
+                                <View
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_11"
+                                    android:id="@+id/viewEllipseSeventySeven"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linearRowjalapenos"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtJalapenos"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtJalapenos}"
+                                style="@style/txtMerriweatherregular19" tools:text="@string/lbl_jalapenos"/>
+                            <LinearLayout
+                                android:gravity="center_horizontal"
+                                android:id="@+id/linearColumnellipseseventynine"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical" style="@style/groupStylegray_402cornerRadius">
+                                <View
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_11"
+                                    android:id="@+id/viewEllipseSeventyNine"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linearColumnnutritionalinf"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                        <FrameLayout
+                            android:id="@+id/frameStacknutritionalinf"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_64pxv" android:layout_width="@dimen/_240pxh">
+                            <TextView android:ellipsize="end"
+                                android:gravity="top|start"
+                                android:id="@+id/txtNutritionalInf"
+                                android:layout_gravity="top|start"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtNutritionalInf}"
+                                style="@style/txtMerriweatherbold20" tools:text="@string/msg_nutritional_inf"/>
+                            <FrameLayout
+                                android:id="@+id/frameStacklanguageTen"
+                                android:layout_gravity="start"
+                                android:layout_height="@dimen/_64pxv" android:layout_width="@dimen/_240pxh">
+                                <TextView android:ellipsize="end"
+                                    android:gravity="top|start"
+                                    android:id="@+id/txtLanguageTen"
+                                    android:layout_gravity="bottom|center"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtLanguageTen}"
+                                    style="@style/txtMerriweatherregular19" tools:text="@string/lbl3"/>
+                                <ImageView
+                                    android:id="@+id/imageFastfoodsetFive"
+                                    android:layout_gravity="top|start"
+                                    android:layout_height="@dimen/_55pxh"
+                                    android:layout_width="@dimen/_18pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_fastfoodset"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_fastfoodset"/>
+                            </FrameLayout>
+                        </FrameLayout>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtLanguageEleven"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtLanguageEleven}"
+                            style="@style/txtMerriweatherregular19" tools:text="@string/lbl_calories_380"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtWeight"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtWeight}"
+                            style="@style/txtMerriweatherregular19" tools:text="@string/lbl_fat_18g"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtWeightOne"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtWeightOne}"
+                            style="@style/txtMerriweatherregular19" tools:text="@string/lbl_protien_25g"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linearColumnspecialrequest"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                        <TextView android:ellipsize="end"
+                            android:gravity="start"
+                            android:id="@+id/txtSpecialRequest"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtSpecialRequest}"
+                            style="@style/txtMerriweatherregular19" tools:text="@string/msg_special_request"/>
+                        <View
+                            android:background="@drawable/rectangle_bg_white_a700_df_border_black_901"
+                            android:id="@+id/viewRectangleEightySeven"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="@dimen/_98pxv" android:layout_width="@dimen/_369pxh"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/imageImageEleven"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_258pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_image11_258x390}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_image11_258x390"/>
+                    <LinearLayout
+                        android:id="@+id/linearColumnbbqbaconburge"
+                        android:layout_gravity="top|start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStyle">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtBBQBaconBurge"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtBBQBaconBurge}"
+                            style="@style/txtLobsterTwo20" tools:text="@string/msg_bbq_bacon_burge"/>
+                        <TextView android:id="@+id/txtJuicyflamegr"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtJuicyflamegr}"
+                            style="@style/txtMerriweatherSansromanregular14_4" tools:text="@string/msg_juicy_flame_gr"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <LinearLayout
+                    android:id="@+id/linearRowrectangleeightyeight"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <FrameLayout
+                        android:id="@+id/frameStackrectangleeightyeight"
+                        android:layout_height="@dimen/_43pxv" android:layout_width="@dimen/_94pxh">
+                        <View
+                            android:background="@drawable/rectangle_gradient_s_gray_907_c_purple_900_00_e_gray_907_border_gray_906_radius_20"
+                            android:id="@+id/viewRectangleEightyEight"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_42pxv" android:layout_width="@dimen/_94pxh"/>
+                        <ImageView android:id="@+id/imageHeart"
+                            android:layout_gravity="top|center"
+                            android:layout_height="@dimen/_40pxh"
+                            android:layout_width="@dimen/_40pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_heart"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_heart"/>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/frameStackrectangleeleven"
+                        android:layout_height="@dimen/_44pxv" android:layout_width="@dimen/_186pxh">
+                        <View
+                            android:background="@drawable/rectangle_gradient_s_gray_907_c_purple_900_00_e_gray_907_border_gray_906_radius_20"
+                            android:id="@+id/viewRectangleEleven"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="@dimen/_42pxv" android:layout_width="@dimen/_186pxh"/>
+                        <TextView android:ellipsize="end"
+                            android:gravity="top|start"
+                            android:id="@+id/txtAddtoCart"
+                            android:layout_gravity="top|center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtAddtoCart}"
+                            style="@style/txtIcebergregular31" tools:text="@string/lbl_add_to_cart"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarNavigationbar"
+            android:layout_gravity="top|start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:contentInsetStart="0dp" style="@style/groupStylewhite_7">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowarrowleft"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageArrowleft"
+                    android:layout_height="@dimen/_24pxh"
+                    android:layout_width="@dimen/_32pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrowleft"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtCustomize"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{iphone14ThirtysevenVM.iphone14ThirtysevenModel.txtCustomize}"
+                    style="@style/txtMerriweatherSansromanregular20" tools:text="@string/lbl_customize"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </FrameLayout>
+</layout>

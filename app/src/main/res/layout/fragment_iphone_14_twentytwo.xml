@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="iphone14TwentytwoVM" type="com.natashasapplication.app.modules.iphone14twentytwo.data.viewmodel.Iphone14TwentytwoVM"/>
+    </data>
+    <androidx.core.widget.NestedScrollView android:clipToPadding="false"
+        android:fillViewport="true"
+        android:id="@+id/scrollViewScrollview"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnellipsetwentyfour"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <FrameLayout android:id="@+id/frameStackellipsetwentyfour"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_773pxv" android:layout_width="@dimen/_387pxh">
+                <ImageView android:id="@+id/imageEllipseTwentyFour"
+                    android:layout_gravity="start"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_ellipse24_6}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse24_6"/>
+                <LinearLayout android:id="@+id/linearRowlinefifteen"
+                    android:layout_gravity="top|center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <View android:background="@color/black_900_c1"
+                        android:id="@+id/lineLineFifteen"
+                        android:layout_height="@dimen/_1pxv" android:layout_width="@dimen/_131pxh"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtBeverages"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{iphone14TwentytwoVM.iphone14TwentytwoModel.txtBeverages}"
+                        style="@style/txtMerriweatherSansromanregular19" tools:text="@string/lbl_beverages"/>
+                    <View android:background="@color/black_900_c1"
+                        android:id="@+id/lineLineSixteen"
+                        android:layout_height="@dimen/_1pxv" android:layout_width="@dimen/_131pxh"/>
+                </LinearLayout>
+            </FrameLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerListspecials"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_19pxh}" tools:itemCount="2" tools:listitem="@layout/row_listspecials"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

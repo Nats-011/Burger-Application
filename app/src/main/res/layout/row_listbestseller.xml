@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listbestsellerRowModel" type="com.natashasapplication.app.modules.iphone14seventeen.data.model.ListbestsellerRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackclassiccheeseb"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <FrameLayout android:id="@+id/frameStack"
+            android:layout_gravity="top|start"
+            android:layout_height="@dimen/_236pxv"
+            android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+            <ImageView android:id="@+id/imageImageNine"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_236pxh"
+                android:layout_width="@dimen/_390pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_image9}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image9"/>
+            <FrameLayout android:id="@+id/frameStackbestseller"
+                android:layout_gravity="top|start"
+                android:layout_height="@dimen/_30pxv" android:layout_width="@dimen/_100pxh">
+                <ImageView android:id="@+id/imageImageTen"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_30pxh"
+                    android:layout_width="@dimen/_100pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_image10"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_image10"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:id="@+id/txtBestseller"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{listbestsellerRowModel.txtBestseller}"
+                    style="@style/txtMerriweatherSansromanregular14_3" tools:text="@string/lbl_bestseller"/>
+            </FrameLayout>
+        </FrameLayout>
+        <LinearLayout android:id="@+id/linearColumnlineseventeen"
+            android:layout_gravity="bottom|start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyle">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnclassiccheeseb"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" android:orientation="vertical">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowclassiccheeseb"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtClassicCheeseb"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{listbestsellerRowModel.txtClassicCheeseb}"
+                        style="@style/txtLobsterTwo20" tools:text="@string/msg_classic_cheeseb"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtFourHundredFiftyFive"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{listbestsellerRowModel.txtFourHundredFiftyFive}"
+                        style="@style/txtLobsterTwo19" tools:text="@string/lbl_4_5_5"/>
+                </LinearLayout>
+                <TextView android:id="@+id/txtJuicyflamegr"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@{listbestsellerRowModel.txtJuicyflamegr}"
+                    style="@style/txtMerriweatherSansromanregular14_4" tools:text="@string/msg_juicy_flame_gr"/>
+            </LinearLayout>
+            <View android:background="@color/black_901"
+                android:id="@+id/lineLineSeventeen"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_1pxv" android:layout_width="@dimen/_388pxh"/>
+            <LinearLayout android:id="@+id/linearRowprice"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumnprice"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtPrice"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{listbestsellerRowModel.txtPrice}"
+                        style="@style/txtMerriweatherSansromanbold21_1" tools:text="@string/lbl_9_99"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtAvailable"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{listbestsellerRowModel.txtAvailable}"
+                        style="@style/txtMerriweatherSansromanbold16"
+                        textUnderline="true" tools:text="@string/lbl_available"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearRowlanguage"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal" style="@style/groupStylered_A702cornerRadius">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtLanguage"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{listbestsellerRowModel.txtLanguage}"
+                        style="@style/txtMerriweatherSansromanregular20_1" tools:text="@string/lbl_add"/>
+                    <ImageView android:id="@+id/imageVector"
+                        android:layout_height="@dimen/_21pxh"
+                        android:layout_width="@dimen/_21pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_vector_white_a700_21x21"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_vector_white_a700_21x21"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:id="@+id/txtGroup297"
+            android:layout_gravity="bottom|end"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingBottom="@dimen/_2pxv"
+            android:paddingStart="@dimen/_18pxh"
+            android:paddingTop="@dimen/_3pxv" android:singleLine="true"
+            android:text="@{listbestsellerRowModel.txtGroup297}"
+            style="@style/txtGradientRounded_1" tools:text="@string/lbl_customize"/>
+    </FrameLayout>
+</layout>

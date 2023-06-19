@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="iphone14FiveVM" type="com.natashasapplication.app.modules.iphone14five.data.viewmodel.Iphone14FiveVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearIPhone14Fiv"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageArrowleft"
+            android:layout_height="@dimen/_24pxh"
+            android:layout_width="@dimen/_32pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_arrowleft"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+        <LinearLayout android:id="@+id/linearColumnlikes"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <TextView android:ellipsize="end" android:id="@+id/txtLikes"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{iphone14FiveVM.iphone14FiveModel.txtLikes}"
+                style="@style/txtMerriweatherSansromanregular20" tools:text="@string/lbl_likes"/>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearRowgroup"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageGroup"
+                    android:layout_height="@dimen/_40pxh"
+                    android:layout_width="@dimen/_40pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_group"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_group"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtNothinghereye"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{iphone14FiveVM.iphone14FiveModel.txtNothinghereye}"
+                    style="@style/txtMerriweatherSansromanregular18_1" tools:text="@string/msg_nothing_here_ye"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end" android:gravity="end"
+                android:id="@+id/txtAddburgersyou"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{iphone14FiveVM.iphone14FiveModel.txtAddburgersyou}"
+                style="@style/txtMerriweatherSansromanregular18_1" tools:text="@string/msg_add_burgers_you"/>
+            <ImageView android:id="@+id/imageVector"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/_37pxh"
+                android:layout_width="@dimen/_37pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_vector_black_901"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_vector_black_901"/>
+            <TextView android:ellipsize="end" android:gravity="end"
+                android:id="@+id/txtAddburgers"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{iphone14FiveVM.iphone14FiveModel.txtAddburgers}"
+                style="@style/txtMerriweatherSansromanbold20"
+                textUnderline="true" tools:text="@string/lbl_add_burgers"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

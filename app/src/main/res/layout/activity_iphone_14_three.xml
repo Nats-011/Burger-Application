@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="iphone14ThreeVM" type="com.natashasapplication.app.modules.iphone14three.data.viewmodel.Iphone14ThreeVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackarrowleft"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylepurple_700">
+        <FrameLayout android:id="@+id/frameIPhone14Thr"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" style="@style/groupStylepurple_700">
+            <FrameLayout android:id="@+id/frameStackellipseone"
+                android:layout_gravity="top|start"
+                android:layout_height="@dimen/_215pxv" android:layout_width="@dimen/_270pxh">
+                <ImageView android:id="@+id/imageEllipseOne"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_215pxh"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    cornerRadius="@{@dimen/_137pxh}"
+                    imageRes="@{@drawable/img_ellipse1_2}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse1_2"/>
+                <FrameLayout android:id="@+id/frameStackellipsetwo"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_215pxv" android:layout_width="@dimen/_237pxh">
+                    <ImageView android:id="@+id/imageEllipseTwo"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="@dimen/_194pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_ellipse2_1}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse2_1"/>
+                    <View
+                        android:background="@drawable/rectangle_bg_white_a700_radius_68_5"
+                        android:id="@+id/viewEllipseSix"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_137pxh" android:layout_width="@dimen/_134pxh"/>
+                </FrameLayout>
+            </FrameLayout>
+            <LinearLayout android:id="@+id/linearRowarrowleft"
+                android:layout_gravity="top|center"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylecornerRadius_2">
+                <ImageView android:id="@+id/imageArrowleft"
+                    android:layout_height="@dimen/_22pxh"
+                    android:layout_width="@dimen/_9pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrowleft_gray_908"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft_gray_908"/>
+                <View android:background="@color/gray_700"
+                    android:id="@+id/lineLineFour"
+                    android:layout_height="@dimen/_28pxv" android:layout_width="@dimen/_2pxh"/>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/frameStackellipsetwentyfour"
+                android:layout_gravity="bottom|start"
+                android:layout_height="@dimen/_773pxv" android:layout_width="match_parent">
+                <ImageView android:id="@+id/imageEllipseTwentyFour"
+                    android:layout_gravity="start"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_ellipse24_773x387}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse24_773x387"/>
+                <LinearLayout android:id="@+id/linearColumnpopular"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtPopular"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{iphone14ThreeVM.iphone14ThreeModel.txtPopular}"
+                        style="@style/txtIBMPlexSansCondensedibmplexsanscondmedium25" tools:text="@string/lbl_popular"/>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearRowrectanglethirteen"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <FrameLayout
+                            android:id="@+id/frameStackrectanglethirteen"
+                            android:layout_height="@dimen/_48pxv" android:layout_width="@dimen/_58pxh">
+                            <View
+                                android:background="@drawable/rectangle_bg_bluegray_100_radius_5"
+                                android:id="@+id/viewRectangleThirteen"
+                                android:layout_gravity="bottom|start"
+                                android:layout_height="@dimen/_45pxv" android:layout_width="@dimen/_58pxh"/>
+                            <ImageView android:id="@+id/imageImageOne"
+                                android:layout_gravity="center"
+                                android:layout_height="@dimen/_46pxh"
+                                android:layout_width="@dimen/_52pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_image1"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_image1"/>
+                        </FrameLayout>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtLanguage"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{iphone14ThreeVM.iphone14ThreeModel.txtLanguage}"
+                            style="@style/txtIBMPlexSansCondensedibmplexsanscondmedium21" tools:text="@string/msg_classic_cheese"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearRowbaconcheesebur"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <FrameLayout android:id="@+id/frameStack"
+                            android:layout_height="@dimen/_45pxv"
+                            android:layout_width="@dimen/_58pxh" style="@style/groupStylebluegray_100cornerRadius">
+                            <ImageView android:id="@+id/imageImageTwo"
+                                android:layout_gravity="center"
+                                android:layout_height="@dimen/_45pxh"
+                                android:layout_width="@dimen/_50pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_image2"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_image2"/>
+                        </FrameLayout>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtBaconCheesebur"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{iphone14ThreeVM.iphone14ThreeModel.txtBaconCheesebur}"
+                            style="@style/txtIBMPlexSansCondensedibmplexsanscondmedium21" tools:text="@string/msg_bacon_cheesebur"/>
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerListrectanglefifteen"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        itemSpace="@{@dimen/_28pxh}" tools:itemCount="2" tools:listitem="@layout/row_listrectanglefifteen"/>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearRowbluecheesebur"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <FrameLayout android:id="@+id/frameStackOne"
+                            android:layout_height="@dimen/_45pxv"
+                            android:layout_width="@dimen/_58pxh" style="@style/groupStylebluegray_100cornerRadius">
+                            <ImageView android:id="@+id/imageImageFive"
+                                android:layout_gravity="top|end"
+                                android:layout_height="@dimen/_41pxh"
+                                android:layout_width="@dimen/_51pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_image5"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_image5"/>
+                        </FrameLayout>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtBlueCheeseBur"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{iphone14ThreeVM.iphone14ThreeModel.txtBlueCheeseBur}"
+                            style="@style/txtIBMPlexSansCondensedibmplexsanscondmedium21" tools:text="@string/msg_blue_cheese_bur"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearRowrectangleeighteen"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <FrameLayout
+                            android:id="@+id/frameStackrectangleeighteen"
+                            android:layout_height="@dimen/_45pxv" android:layout_width="@dimen/_58pxh">
+                            <View
+                                android:background="@drawable/rectangle_bg_bluegray_100_radius_5"
+                                android:id="@+id/viewRectangleEighteen"
+                                android:layout_gravity="start"
+                                android:layout_height="@dimen/_45pxv" android:layout_width="@dimen/_58pxh"/>
+                            <ImageView android:id="@+id/imageImageSix"
+                                android:layout_gravity="bottom|center"
+                                android:layout_height="@dimen/_41pxh"
+                                android:layout_width="@dimen/_53pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_image6"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_image6"/>
+                        </FrameLayout>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtMushroomSwiss"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{iphone14ThreeVM.iphone14ThreeModel.txtMushroomSwiss}"
+                            style="@style/txtIBMPlexSansCondensedibmplexsanscondmedium21" tools:text="@string/msg_mushroom_swiss"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearRowavocadobaconb"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <FrameLayout android:id="@+id/frameStackTwo"
+                            android:layout_height="@dimen/_45pxv"
+                            android:layout_width="@dimen/_58pxh" style="@style/groupStylebluegray_100cornerRadius">
+                            <ImageView android:id="@+id/imageImageSeven"
+                                android:layout_gravity="end"
+                                android:layout_height="@dimen/_45pxh"
+                                android:layout_width="@dimen/_45pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_image7"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_image7"/>
+                        </FrameLayout>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtAvocadoBaconB"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{iphone14ThreeVM.iphone14ThreeModel.txtAvocadoBaconB}"
+                            style="@style/txtIBMPlexSansCondensedibmplexsanscondmedium21" tools:text="@string/msg_avocado_bacon_b"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </FrameLayout>
+    </FrameLayout>
+</layout>
