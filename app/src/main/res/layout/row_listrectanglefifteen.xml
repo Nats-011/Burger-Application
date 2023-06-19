@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listrectanglefifteenRowModel" type="com.natashasapplication.app.modules.iphone14three.data.model.ListrectanglefifteenRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowrectanglefifteen"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <FrameLayout android:id="@+id/frameStackrectanglefifteen"
+            android:layout_height="@dimen/_52pxv" android:layout_width="@dimen/_58pxh">
+            <View
+                android:background="@drawable/rectangle_bg_bluegray_100_radius_5"
+                android:id="@+id/viewRectangleFifteen"
+                android:layout_gravity="top|start"
+                android:layout_height="@dimen/_45pxv" android:layout_width="@dimen/_58pxh"/>
+            <ImageView android:id="@+id/imageImageThree"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_52pxh"
+                android:layout_width="@dimen/_51pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_image3}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image3"/>
+        </FrameLayout>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtBBQBaconBurge"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{listrectanglefifteenRowModel.txtBBQBaconBurge}"
+            style="@style/txtIBMPlexSansCondensedibmplexsanscondmedium21" tools:text="@string/msg_bbq_bacon_burge"/>
+    </LinearLayout>
+</layout>

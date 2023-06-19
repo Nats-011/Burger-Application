@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.natashasapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.natashasapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity android:exported="true"
+            android:name="com.natashasapplication.app.modules.iphone14one.ui.Iphone14OneActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14sixtythree.ui.Iphone14SixtythreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14thirtysix.ui.Iphone14ThirtysixActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14thirtythree.ui.Iphone14ThirtythreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14six.ui.Iphone14SixActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14two.ui.Iphone14TwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14sixtyfour.ui.Iphone14SixtyfourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.appnavigation.ui.AppNavigationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14seventythree.ui.Iphone14SeventythreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14fortyfive.ui.Iphone14FortyfiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14four.ui.Iphone14FourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14sixtyeight.ui.Iphone14SixtyeightActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14fortyone.ui.Iphone14FortyoneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14five.ui.Iphone14FiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14fiftyeight.ui.Iphone14FiftyeightActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14fortythree.ui.Iphone14FortythreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14sixty.ui.Iphone14SixtyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14thirtyfive.ui.Iphone14ThirtyfiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14fortytwo.ui.Iphone14FortytwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14twentyone1.ui.Iphone14Twentyone1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14sixtytwo.ui.Iphone14SixtytwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14fifty.ui.Iphone14FiftyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14fiftytwo.ui.Iphone14FiftytwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14sixtyfive.ui.Iphone14SixtyfiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14fiftyseven.ui.Iphone14FiftysevenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14sixtynine.ui.Iphone14SixtynineActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14forty.ui.Iphone14FortyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14fiftythree.ui.Iphone14FiftythreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14fortysix.ui.Iphone14FortysixActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14twelve.ui.Iphone14TwelveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14thirtynine.ui.Iphone14ThirtynineActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14thirtytwo.ui.Iphone14ThirtytwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14sixtysix.ui.Iphone14SixtysixActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14fortyfour.ui.Iphone14FortyfourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14thirtyseven.ui.Iphone14ThirtysevenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14three.ui.Iphone14ThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14sixtyone.ui.Iphone14SixtyoneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14fiftynine.ui.Iphone14FiftynineActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14seven.ui.Iphone14SevenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14thirtyfour.ui.Iphone14ThirtyfourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14fiftyone.ui.Iphone14FiftyoneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14fortyeight.ui.Iphone14FortyeightActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14fortyseven.ui.Iphone14FortysevenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14fortynine.ui.Iphone14FortynineActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14seventyfour.ui.Iphone14SeventyfourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14seventyone.ui.Iphone14SeventyoneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14sixtyseven.ui.Iphone14SixtysevenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.natashasapplication.app.modules.iphone14nine.ui.Iphone14NineActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

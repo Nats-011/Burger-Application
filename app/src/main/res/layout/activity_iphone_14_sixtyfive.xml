@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="iphone14SixtyfiveVM" type="com.natashasapplication.app.modules.iphone14sixtyfive.data.viewmodel.Iphone14SixtyfiveVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameIPhone14Six"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylepurple_700_f2">
+        <LinearLayout android:id="@+id/linearRowarrowleft"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylewhite_8">
+            <ImageView android:id="@+id/imageArrowleft"
+                android:layout_height="@dimen/_24pxh"
+                android:layout_width="@dimen/_32pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_arrowleft"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSendFeedback"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{iphone14SixtyfiveVM.iphone14SixtyfiveModel.txtSendFeedback}"
+                style="@style/txtMerriweatherSansromanregular20" tools:text="@string/lbl_send_feedback"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearColumndescription"
+            android:layout_gravity="top|center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_10">
+            <TextView android:id="@+id/txtDescription"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@{iphone14SixtyfiveVM.iphone14SixtyfiveModel.txtDescription}"
+                style="@style/txtMerriweatherSansromanregular16_1" tools:text="@string/msg_tell_us_what_yo"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtEnterFeedback"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{iphone14SixtyfiveVM.iphone14SixtyfiveModel.txtEnterFeedback}"
+                style="@style/txtMerriweatherSansromanregular17_1" tools:text="@string/lbl_enter_feedback"/>
+            <View android:background="@color/gray_403"
+                android:id="@+id/lineLineTwentyOne"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_1pxv" android:layout_width="@dimen/_321pxh"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnSubmitFeedbackOne"
+            android:layout_gravity="bottom|center"
+            android:layout_height="@dimen/_55pxv"
+            android:layout_width="@dimen/_331pxh"
+            android:paddingBottom="@dimen/_14pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_14pxv" android:singleLine="true"
+            android:text="@string/msg_submit_feedbac"
+            android:textAllCaps="false" style="@style/btnSolidRounded_1" tools:text="@string/msg_submit_feedbac"/>
+    </FrameLayout>
+</layout>

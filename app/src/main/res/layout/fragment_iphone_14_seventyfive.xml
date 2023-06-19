@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="iphone14SeventyfiveVM" type="com.natashasapplication.app.modules.iphone14seventyfive.data.viewmodel.Iphone14SeventyfiveVM"/>
+    </data>
+    <ScrollView android:clipToPadding="false"
+        android:fillViewport="true"
+        android:id="@+id/scrollViewScrollview"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnellipsetwentyfour"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <FrameLayout android:id="@+id/frameStackellipsetwentyfour"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_773pxv" android:layout_width="@dimen/_387pxh">
+                <ImageView android:id="@+id/imageEllipseTwentyFour"
+                    android:layout_gravity="start"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_ellipse24_3}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse24_3"/>
+                <LinearLayout android:id="@+id/linearRowlinefifteen"
+                    android:layout_gravity="top|center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <View android:background="@color/black_900_c1"
+                        android:id="@+id/lineLineFifteen"
+                        android:layout_height="@dimen/_1pxv" android:layout_width="@dimen/_131pxh"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtBurgers"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{iphone14SeventyfiveVM.iphone14SeventyfiveModel.txtBurgers}"
+                        style="@style/txtMerriweatherSansromanregular19" tools:text="@string/lbl_burgers"/>
+                    <View android:background="@color/black_900_c1"
+                        android:id="@+id/lineLineSixteen"
+                        android:layout_height="@dimen/_1pxv" android:layout_width="@dimen/_131pxh"/>
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumngroup1004"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylegray_800_7f">
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_black_901_radius_23"
+                    android:id="@+id/btnGroup1004"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_46pxh"
+                    android:layout_width="@dimen/_46pxh"
+                    android:paddingHorizontal="@dimen/_15pxh"
+                    android:paddingVertical="@dimen/_15pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_group1004" tools:ignore="ContentDescription"/>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/frameStack"
+                android:layout_height="@dimen/_236pxv"
+                android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+                <ImageView android:id="@+id/imageImageNine"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_236pxh"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_image9_236x390}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_image9_236x390"/>
+                <FrameLayout android:id="@+id/frameStackbestseller"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_30pxv" android:layout_width="@dimen/_100pxh">
+                    <ImageView android:id="@+id/imageImageTen"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_30pxh"
+                        android:layout_width="@dimen/_100pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_image10_30x100"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_image10_30x100"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtBestseller"
+                        android:layout_gravity="top|start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{iphone14SeventyfiveVM.iphone14SeventyfiveModel.txtBestseller}"
+                        style="@style/txtMerriweatherSansromanregular14_3" tools:text="@string/lbl_bestseller"/>
+                </FrameLayout>
+            </FrameLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtGroup1010"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingBottom="@dimen/_2pxv"
+                android:paddingStart="@dimen/_18pxh"
+                android:paddingTop="@dimen/_3pxv"
+                android:singleLine="true"
+                android:text="@{iphone14SeventyfiveVM.iphone14SeventyfiveModel.txtGroup1010}"
+                style="@style/txtGradientRounded_1" tools:text="@string/lbl_customize"/>
+            <LinearLayout android:id="@+id/linearColumnlineseventeen"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStyle">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumnclassiccheeseb"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:orientation="vertical">
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearRowclassiccheeseb"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtClassicCheeseb"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{iphone14SeventyfiveVM.iphone14SeventyfiveModel.txtClassicCheeseb}"
+                            style="@style/txtLobsterTwo20" tools:text="@string/msg_classic_cheeseb"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtFourHundredFiftyFive"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{iphone14SeventyfiveVM.iphone14SeventyfiveModel.txtFourHundredFiftyFive}"
+                            style="@style/txtLobsterTwo19" tools:text="@string/lbl_4_5_5"/>
+                    </LinearLayout>
+                    <TextView android:id="@+id/txtJuicyflamegr"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@{iphone14SeventyfiveVM.iphone14SeventyfiveModel.txtJuicyflamegr}"
+                        style="@style/txtMerriweatherSansromanregular14_4" tools:text="@string/msg_juicy_flame_gr"/>
+                </LinearLayout>
+                <View android:background="@color/black_901"
+                    android:id="@+id/lineLineSeventeen"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_1pxv" android:layout_width="@dimen/_388pxh"/>
+                <LinearLayout android:id="@+id/linearRowprice"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearColumnprice"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtPrice"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{iphone14SeventyfiveVM.iphone14SeventyfiveModel.txtPrice}"
+                            style="@style/txtMerriweatherSansromanbold21_1" tools:text="@string/lbl_9_99"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtAvailable"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{iphone14SeventyfiveVM.iphone14SeventyfiveModel.txtAvailable}"
+                            style="@style/txtMerriweatherSansromanbold16"
+                            textUnderline="true" tools:text="@string/lbl_available"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/linearRowlanguage"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal" style="@style/groupStylered_A702cornerRadius">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtLanguage"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{iphone14SeventyfiveVM.iphone14SeventyfiveModel.txtLanguage}"
+                            style="@style/txtMerriweatherSansromanregular20_1" tools:text="@string/lbl_add"/>
+                        <ImageView android:id="@+id/imageVector"
+                            android:layout_height="@dimen/_21pxh"
+                            android:layout_width="@dimen/_21pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_vector_white_a700_21x21"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_vector_white_a700_21x21"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnsortby"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_6">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtSortby"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{iphone14SeventyfiveVM.iphone14SeventyfiveModel.txtSortby}"
+                    style="@style/txtMerriweatherSansromanregular20" tools:text="@string/lbl_sort_by"/>
+                <View android:background="@color/black_900_66"
+                    android:id="@+id/lineLineNineteen"
+                    android:layout_height="@dimen/_1pxv" android:layout_width="@dimen/_390pxh"/>
+                <LinearLayout android:id="@+id/linearRowratinghighto"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtRatingHighto"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{iphone14SeventyfiveVM.iphone14SeventyfiveModel.txtRatingHighto}"
+                        style="@style/txtMerriweatherSansromanregular19" tools:text="@string/msg_rating_high_to"/>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumnellipsethirtynine"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical" style="@style/groupStylegray_402cornerRadius">
+                        <View
+                            android:background="@drawable/rectangle_bg_white_a700_radius_11"
+                            android:id="@+id/viewEllipseThirtyNine"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearRowpricelowtoh"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtPriceLowtoH"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{iphone14SeventyfiveVM.iphone14SeventyfiveModel.txtPriceLowtoH}"
+                        style="@style/txtMerriweatherSansromanregular19" tools:text="@string/msg_price_low_to_h"/>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumnellipsethirtynineOne"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical" style="@style/groupStylegray_402cornerRadius">
+                        <View
+                            android:background="@drawable/rectangle_bg_white_a700_radius_11"
+                            android:id="@+id/viewEllipseThirtyNineOne"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearRowpricehighto"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtPriceHighto"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{iphone14SeventyfiveVM.iphone14SeventyfiveModel.txtPriceHighto}"
+                        style="@style/txtMerriweatherSansromanregular19" tools:text="@string/msg_price_high_to"/>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumnellipsefortyone"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical" style="@style/groupStylegray_402cornerRadius">
+                        <View
+                            android:background="@drawable/rectangle_bg_white_a700_radius_11"
+                            android:id="@+id/viewEllipseFortyOne"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="@dimen/_22pxh" android:layout_width="@dimen/_22pxh"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/black_900_66"
+                    android:id="@+id/lineLineTwenty"
+                    android:layout_height="@dimen/_1pxv" android:layout_width="@dimen/_390pxh"/>
+                <LinearLayout android:id="@+id/linearRowclearall"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtClearall"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{iphone14SeventyfiveVM.iphone14SeventyfiveModel.txtClearall}"
+                        style="@style/txtMerriweatherSansromanregular20_2" tools:text="@string/lbl_clear_all"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnApply"
+                        android:layout_height="@dimen/_48pxv"
+                        android:layout_width="@dimen/_172pxh"
+                        android:paddingBottom="@dimen/_11pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_11pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_apply"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded_2" tools:text="@string/lbl_apply"/>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:gravity="center_horizontal"
+                android:id="@+id/imageRectangleFiftyTwo"
+                android:layout_height="@dimen/_236pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_rectangle52_236x388}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle52_236x388"/>
+            <FrameLayout android:id="@+id/frameStackgroup1009"
+                android:layout_height="@dimen/_258pxv" android:layout_width="match_parent">
+                <FrameLayout android:id="@+id/frameStackOne"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_211pxv" android:layout_width="match_parent">
+                    <ImageView android:id="@+id/imageImageEleven"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_211pxh"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_image11_211x390}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_image11_211x390"/>
+                    <FrameLayout android:id="@+id/frameStacknew"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_30pxv" android:layout_width="@dimen/_82pxh">
+                        <ImageView android:id="@+id/imageImageTwelve"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_30pxh"
+                            android:layout_width="@dimen/_82pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_image12_30x82"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_image12_30x82"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtNew"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{iphone14SeventyfiveVM.iphone14SeventyfiveModel.txtNew}"
+                            style="@style/txtMerriweatherSansromanbold14" tools:text="@string/lbl_new"/>
+                    </FrameLayout>
+                </FrameLayout>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtGroup1009"
+                    android:layout_gravity="bottom|end"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:paddingBottom="@dimen/_5pxv"
+                    android:paddingStart="@dimen/_18pxh"
+                    android:paddingTop="@dimen/_1pxv"
+                    android:singleLine="true"
+                    android:text="@{iphone14SeventyfiveVM.iphone14SeventyfiveModel.txtGroup1009}"
+                    style="@style/txtGradientRounded_1" tools:text="@string/lbl_customize"/>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</layout>
